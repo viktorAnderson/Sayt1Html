@@ -5,25 +5,35 @@
 <meta charset="UTF-8">
 <title>ООО СК — Высотные работы</title>
 <link rel="stylesheet" href="css/style.css">
+<script src="js/lang.js"></script>
 </head>
 <body>
 <header>
-<h1>ООО СК</h1>
-<p>Промышленный альпинизм и высотные работы</p>
-<nav>
-<a href="index.html">Главная</a>
-<a href="services.html">Услуги</a>
-<a href="suppliers.html">Поставщики</a>
-<a href="contacts.html">Контакты</a>
-</nav>
+<h1 data-ru="Высотные работы" data-ua="Висотні роботи">Высотные работы</h1>
+<button onclick="setLang('ru')">RU</button>
+<button onclick="setLang('ua')">UA</button>
 </header>
 
-<section class="hero">
-<h2>Высотные работы под ключ</h2>
-<p>Фасады, кровля, герметизация, монтаж. Работаем по Украине.</p>
-<img src="images/work1.jpg" alt="Высотные работы">
+<section>
+<h2 data-ru="Онлайн заявка" data-ua="Онлайн заявка">Онлайн заявка</h2>
+<form action="send.html">
+<input placeholder="Имя" required>
+<input placeholder="Телефон" required>
+<textarea placeholder="Описание работ"></textarea>
+<button type="submit">Отправить</button>
+</form>
 </section>
 
-<footer>© ООО СК, Харьков</footer>
+<section>
+<h2>Онлайн оплата</h2>
+<p>Поддержка Google Pay / Card (Stripe подключение)</p>
+<button>Оплатить</button>
+</section>
+
+<section>
+<h2>Telegram-бот</h2>
+<p>После заявки клиент получает автоответ в Telegram</p>
+<a href="https://t.me/yourbot">Перейти в бот</a>
+</section>
 </body>
 </html>
